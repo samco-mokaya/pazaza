@@ -1,20 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MovieCard from './components/MovieCard';
 
 function App() {
   return (
     <>
-    <Text display="wagwaan"/>
-    <Text display="brudda"/>
-    <p>Hello</p>
+  <MovieCard movie={{title : "somesonsam",release_date:"2025"}}/>
+  <MovieCard movie={{title: "jojo bizzare adventures",release_date:"2023 "}}/>
     </>
   );
-}
-function Text({display}){
-  return (
-    <div>
-      <p>{display}</p>
-    </div>
-  )
 }
 export default App;
